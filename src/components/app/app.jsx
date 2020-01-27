@@ -14,6 +14,7 @@ export class App extends React.Component {
     render() {
         return (
             <div className="app">
+                {/*<BrowserRouter basename="/Tic-Tac-Toe-ReactJS/">*/}
                 <BrowserRouter>
                     <Route exact path="/" component={Scoreboard}/>
                     <Route path="/board" component={Board}/>
