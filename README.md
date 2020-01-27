@@ -1,28 +1,35 @@
-# ReactJS Project Structure
-This is a project structure I love using in my projects and since several of you asked to upload it to GitHub meanwhile you were doing my tutorials, here it is!
+# Tic Tac Toe in ReactJS
+This project is a bigger project than others from the tutorials I am creating in my blog (and that they will be ready soon, I will post a link to them here).
 
-# How to use it?
-Easy! In assets folder just place the assets of your project, like images, fonts (you will need to create the fonts folder), sass and so on.
+Meanwhile I finish writing them, you can download this project and test it by yourself since all the code is full of comments explaining what I do and why I do that!
 
-In components just create a folder for each component and if a component has subcomponents, just create a component's folder inside.
+## Demo
+Yeah, a demo is available! Test the demo [here](#).
 
-For styling the components I also use SCSS but you could use CSS if you prefer it!
+## Main Features
+In this project we work with:
+- Stateless components
+- Stateful components
+- Components and subcomponents
+- Webpack
+- Git
+- SCSS
+- Node Modules
+- LocalStorage
+- CSS Animations
+- React Routes
 
-We have another folder called routes, where you will add all the routes of your app (in the project, the route's files are empty since this app has no routes).
+So it is perfect to start learning, try it!
 
-Utils folder is just for general functions you want to use in several places.
-
-And finally in the root folder (src) I only place the index.js file, the serviceWorker.js and the tests.
-
-# How to install it?
+## How to install it?
 Just run this code:
-``` bash
-git clone https://github.com/NauCode/ReactJS-Project-Structure.git your_project_name
+``` batch
+git clone https://github.com/NauCode/Tic-Tac-Toe-ReactJS.git
 ```
 
 After that, enter in the folder using:
 ``` bash
-cd .\your_project_name\
+cd .\tic-tac-toe-reactjs\
 ```
 
 And install the dependencies:
@@ -35,4 +42,4 @@ Run it:
 npm start
 ```
 
-And done! You can code your app now using this template!
+And done!

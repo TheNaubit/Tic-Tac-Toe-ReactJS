@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from '../../assets/images/logo.svg';
-import './app.scss';
+import ReactDOM from 'react-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="app">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p>
-          Edit <code>src/app.js</code> and save to reload.
-        </p>
-        <a
-          className="app-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// First, import the Board and Scoreboard views
+import {Board} from './../board/board';
+import {Scoreboard} from './../scoreboard/scoreboard';
+
+// Now import the general styles
+import './../../assets/sass/style.scss';
+
+// Let's create the App component
+export class App extends React.Component {
+    render() {
+        return (
+            <div className="app">
+                <BrowserRouter>
+                    <Route exact path="/" component={Scoreboard}/>
+                    <Route path="/board" component={Board}/>
+                </BrowserRouter>
+            </div>
+        );
+    }
 }
-
-export default App;
